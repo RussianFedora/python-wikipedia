@@ -21,7 +21,6 @@ Summary:        %{sum}
 %{?python_provide:%python_provide python2-%{srcname}}
 BuildRequires:  python2-devel
 BuildRequires:  python-beautifulsoup4
-BuildRequires:  pytest
 BuildRequires:  python-requests
 BuildRequires:  python-setuptools
 Requires:       python-beautifulsoup4
@@ -36,7 +35,6 @@ Summary:        %{sum}
 %{?python_provide:%python_provide python3-%{srcname}}
 BuildRequires:  python3-devel
 BuildRequires:  python3-beautifulsoup4
-BuildRequires:  python3-pytest
 BuildRequires:  python3-requests
 BuildRequires:  python3-setuptools
 Requires:       python3-beautifulsoup4
