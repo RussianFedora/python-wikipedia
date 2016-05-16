@@ -24,7 +24,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-beautifulsoup4
 BuildRequires:  python-nose
 BuildRequires:  python-requests
-BuildRequires:  python2-setuptools
+BuildRequires:  python-setuptools
 Requires:       python-beautifulsoup4
 Requires:       python-requests
 
