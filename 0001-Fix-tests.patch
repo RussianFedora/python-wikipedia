@@ -1,0 +1,49 @@
+From 7cde597db5062d87c5f5ffc8164b1e080c58236c Mon Sep 17 00:00:00 2001
+From: region51 <murmansksity@gmail.com>
+Date: Mon, 16 May 2016 16:25:54 +0300
+Subject: [PATCH] Fix tests
+
+Signed-off-by: region51 <murmansksity@gmail.com>
+
+diff --git a/tests/geosearch_test.py b/tests/geosearch_test.py
+index 44df4c0..b1d9e71 100644
+--- a/tests/geosearch_test.py
++++ b/tests/geosearch_test.py
+@@ -5,7 +5,7 @@ from collections import defaultdict
+ from decimal import Decimal
+ 
+ from wikipedia import wikipedia
+-from request_mock_data import mock_data
++from .request_mock_data import mock_data
+ 
+ 
+ # mock out _wiki_request
+diff --git a/tests/page_test.py b/tests/page_test.py
+index 6b38c02..3e28f3f 100644
+--- a/tests/page_test.py
++++ b/tests/page_test.py
+@@ -3,7 +3,7 @@ from decimal import Decimal
+ import unittest
+ 
+ from wikipedia import wikipedia
+-from request_mock_data import mock_data
++from .request_mock_data import mock_data
+ 
+ 
+ # mock out _wiki_request
+diff --git a/tests/search_test.py b/tests/search_test.py
+index 08efe07..4e55c37 100644
+--- a/tests/search_test.py
++++ b/tests/search_test.py
+@@ -4,7 +4,7 @@ import unittest
+ from collections import defaultdict
+ 
+ from wikipedia import wikipedia
+-from request_mock_data import mock_data
++from .request_mock_data import mock_data
+ 
+ 
+ # mock out _wiki_request
+-- 
+2.5.5
+
