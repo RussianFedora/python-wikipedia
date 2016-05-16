@@ -74,7 +74,7 @@ from a page, and more.
 %changelog
 * Sun May 15 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.0-2.R
 - Add tests
-- Add missing R: python2-requests
+- Add missing R: python-requests
 - Add missing R: python3-requests
 
 * Wed Nov 18 2015 Maxim Orlov <murmansksity@gmail.com> - 1.4.0-1.R
