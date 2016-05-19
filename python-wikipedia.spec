@@ -2,7 +2,7 @@
 %global sum Wikipedia API for Python
 
 Name:           python-%{srcname}
-Version:        1.4.1
+Version:        1.4.2
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -10,6 +10,7 @@ License:        MIT
 URL:            https://github.com/barrust/Wikipedia
 Source0:        https://github.com/barrust/Wikipedia/archive/v%{version}.tar.gz
 Patch0:         0001-Fix-tests.patch
+Patch1:         0002-__version__-fix.patch
 
 BuildArch:      noarch
 
@@ -59,7 +60,7 @@ from a page, and more.
 %py3_install
 
 %check
-nosetests -v tests/
+nosetests -v tests
 nosetests-%{python2_version}
 nosetests-%{python3_version}
 
@@ -67,15 +68,19 @@ nosetests-%{python3_version}
 %doc README.rst
 %license LICENSE
 %{python2_sitelib}/%{srcname}
-%{python2_sitelib}/wikipedia-*.egg-info/
+%{python2_sitelib}/%{srcname}-*.egg-info
 
 %files -n python3-%{srcname}
 %doc README.rst
 %license LICENSE
 %{python3_sitelib}/%{srcname}
-%{python3_sitelib}/wikipedia-*.egg-info/
+%{python3_sitelib}/%{srcname}-*.egg-info
 
 %changelog
+* Thu May 19 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.2-1.R
+- Update to 1.4.2
+- Add 0002-__version__-fix.patch
+
 * Mon May 16 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.1-1.R
 - Update to 1.4.1
 - Use a new Source0/URL
