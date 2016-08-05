@@ -2,15 +2,13 @@
 %global sum Wikipedia API for Python
 
 Name:           python-%{srcname}
-Version:        1.4.2
+Version:        1.4.3
 Release:        1%{?dist}
 Summary:        %{sum}
 
 License:        MIT
 URL:            https://github.com/barrust/Wikipedia
 Source0:        https://github.com/barrust/Wikipedia/archive/v%{version}.tar.gz
-Patch0:         0001-Fix-tests.patch
-Patch1:         0002-__version__-fix.patch
 
 BuildArch:      noarch
 
@@ -49,7 +47,7 @@ Search Wikipedia, get article summaries, get data like links and images
 from a page, and more.
 
 %prep
-%autosetup -n Wikipedia-%{version} -p1
+%autosetup -n Wikipedia-%{version}
 
 %build
 %py2_build
@@ -77,6 +75,10 @@ nosetests-%{python3_version}
 %{python3_sitelib}/%{srcname}-*.egg-info
 
 %changelog
+* Fri Aug 05 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.3-1.R
+- Update to 1.4.3
+- Drop all patches
+
 * Thu May 19 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.2-1.R
 - Update to 1.4.2
 - Add 0002-__version__-fix.patch
