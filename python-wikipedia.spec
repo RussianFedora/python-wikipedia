@@ -2,13 +2,13 @@
 %global sum Wikipedia API for Python
 
 Name:           python-%{srcname}
-Version:        1.4.3
+Version:        1.4.4
 Release:        1%{?dist}
 Summary:        %{sum}
 
 License:        MIT
 URL:            https://github.com/barrust/Wikipedia
-Source0:        https://github.com/barrust/Wikipedia/archive/v%{version}.tar.gz
+Source0:        %{url}/archive/v%{version}.tar.gz
 
 BuildArch:      noarch
 
@@ -75,6 +75,9 @@ nosetests-%{python3_version}
 %{python3_sitelib}/%{srcname}-*.egg-info
 
 %changelog
+* Thu Sep 01 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.4-1.R
+- Update to 1.4.4
+
 * Fri Aug 05 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.3-1.R
 - Update to 1.4.3
 - Drop all patches
