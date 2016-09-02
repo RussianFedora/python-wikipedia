@@ -2,7 +2,7 @@
 %global sum Wikipedia API for Python
 
 Name:           python-%{srcname}
-Version:        1.4.4
+Version:        1.4.5
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -75,6 +75,9 @@ nosetests-%{python3_version}
 %{python3_sitelib}/%{srcname}-*.egg-info
 
 %changelog
+* Fri Sep 02 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.5-1.R
+- Update to 1.4.5
+
 * Thu Sep 01 2016 Maxim Orlov <murmansksity@gmail.com> - 1.4.4-1.R
 - Update to 1.4.4
 
